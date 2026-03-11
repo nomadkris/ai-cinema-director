@@ -6,7 +6,7 @@
     "build": "vite build",
     "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",
     "preview": "wrangler pages dev dist",
-    "deploy": "npm run build && wrangler pages deploy dist",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name ai-cinema-director",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
